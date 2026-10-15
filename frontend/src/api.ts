@@ -1,6 +1,16 @@
 import { PredictionResponse, HistoryRecord, SpeciesRecord, DbStatus, AuthResponse, LoginResult, TwoFactorStatus, RecoveryCodesResponse, UserProfile } from './types';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+function apiFetch(url: string, options: RequestInit = {}) {
+  const headers = new Headers(options.headers);
+
+  headers.set("ngrok-skip-browser-warning", "true");
+
+  return fetch(url, {
+    ...options,
+    headers,
+  });
+}
 
 export async function uploadAudioForPrediction(file: File, topK: number = 5): Promise<PredictionResponse> {
   const formData = new FormData();
