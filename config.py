@@ -13,7 +13,7 @@ import torch
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Dataset paths - check Colab local storage first, fallback to local project root
-data_dir = r"C:\Users\krutin_12\Desktop\clg project(Internship)\wildlife\birdclef-2026"
+data_dir = r"C:\Users\krutin_12\Desktop\WildLIfe-Detection\birdclef-2026"
 if os.path.exists(os.path.join(data_dir, "train.csv")):
     DATASET_DIR = data_dir
 else:

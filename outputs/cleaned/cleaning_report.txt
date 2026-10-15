@@ -1,0 +1,19 @@
+============================================================
+  DATA CLEANING REPORT
+============================================================
+
+Original records: 35549
+Final records: 21295
+Total removed: 14254
+Retention rate: 59.9%
+
+REMOVAL BREAKDOWN
+----------------------------------------
+Missing files removed: 0
+Corrupted files removed: 0
+Duplicates removed: 0
+Low-rating removed: 14254
+Missing labels removed: 0
+
+Final species count: 185
+Average recordings per species: 115.1

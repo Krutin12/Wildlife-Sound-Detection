@@ -1,0 +1,12 @@
+{
+  "model_name": "efficientnet_b3",
+  "num_classes": 185,
+  "dropout_rate": 0.4,
+  "sample_rate": 32000,
+  "audio_duration": 5,
+  "n_fft": 1024,
+  "hop_length": 240,
+  "n_mels": 256,
+  "fmin": 20,
+  "fmax": 16000
+}

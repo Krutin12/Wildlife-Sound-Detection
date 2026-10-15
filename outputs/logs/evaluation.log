@@ -1,0 +1,23 @@
+[2026-10-08 15:56:38] INFO - wildlife - Loaded model from: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 15:57:50] INFO - wildlife - Loaded model from: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 15:58:40] INFO - wildlife - Loaded model from: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 16:01:27] INFO - wildlife - Loaded model from: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 16:06:48] INFO - wildlife - Loaded model from: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 16:06:48] INFO - wildlife - Running model evaluation on test set...
+[2026-10-08 16:08:41] INFO - wildlife - Loaded model from: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 16:08:42] INFO - wildlife - Running model evaluation on test set...
+[2026-10-08 16:11:39] INFO - wildlife - Loaded model from: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\models\best_model.pth
+[2026-10-08 16:11:39] INFO - wildlife - Running model evaluation on test set...
+[2026-10-08 16:26:51] INFO - wildlife - Accuracy:         0.6683
+[2026-10-08 16:26:51] INFO - wildlife - Precision (macro): 0.7029
+[2026-10-08 16:26:51] INFO - wildlife - Recall (macro):    0.6477
+[2026-10-08 16:26:51] INFO - wildlife - F1 (macro):        0.6566
+[2026-10-08 16:26:51] INFO - wildlife - F1 (weighted):     0.6680
+[2026-10-08 16:26:54] INFO - wildlife - Saved confusion matrix to: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\evaluation\confusion_matrix.png
+[2026-10-08 16:26:54] INFO - wildlife - Saved training history plots to: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\evaluation\training_history.png
+[2026-10-08 16:26:54] INFO - wildlife - Saved classification report to: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\evaluation\classification_report.json
+[2026-10-08 16:26:54] INFO - wildlife - Total misclassified: 1059 / 3193 (33.2%)
+[2026-10-08 16:26:54] INFO - wildlife - 
+Top 20 most misclassified species:
+[2026-10-08 16:26:55] INFO - wildlife - Saved misclassification report to: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\evaluation\misclassification_report.json
+[2026-10-08 16:26:55] INFO - wildlife - All outputs saved to: C:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\evaluation

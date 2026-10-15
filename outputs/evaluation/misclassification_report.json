@@ -1,0 +1,102 @@
+[
+  {
+    "species": "sobtyr1",
+    "errors": 20,
+    "confused_with": "trokin"
+  },
+  {
+    "species": "barant1",
+    "errors": 18,
+    "confused_with": "bkcdon"
+  },
+  {
+    "species": "oliwoo1",
+    "errors": 18,
+    "confused_with": "yeofly1"
+  },
+  {
+    "species": "roahaw",
+    "errors": 18,
+    "confused_with": "barant1"
+  },
+  {
+    "species": "squcuc1",
+    "errors": 17,
+    "confused_with": "rebscy1"
+  },
+  {
+    "species": "greela",
+    "errors": 17,
+    "confused_with": "eulfly1"
+  },
+  {
+    "species": "yeofly1",
+    "errors": 17,
+    "confused_with": "greela"
+  },
+  {
+    "species": "linwoo1",
+    "errors": 16,
+    "confused_with": "squcuc1"
+  },
+  {
+    "species": "undtin1",
+    "errors": 16,
+    "confused_with": "compot1"
+  },
+  {
+    "species": "whtdov",
+    "errors": 16,
+    "confused_with": "barant1"
+  },
+  {
+    "species": "socfly1",
+    "errors": 15,
+    "confused_with": "bbwduc"
+  },
+  {
+    "species": "fusfly1",
+    "errors": 15,
+    "confused_with": "eulfly1"
+  },
+  {
+    "species": "masgna1",
+    "errors": 15,
+    "confused_with": "banana"
+  },
+  {
+    "species": "greant1",
+    "errors": 14,
+    "confused_with": "compot1"
+  },
+  {
+    "species": "bncfly",
+    "errors": 14,
+    "confused_with": "crbthr1"
+  },
+  {
+    "species": "rutjac1",
+    "errors": 13,
+    "confused_with": "fusfly1"
+  },
+  {
+    "species": "yebela1",
+    "errors": 13,
+    "confused_with": "blheag1"
+  },
+  {
+    "species": "spbant3",
+    "errors": 13,
+    "confused_with": "squcuc1"
+  },
+  {
+    "species": "shtnig1",
+    "errors": 13,
+    "confused_with": "compot1"
+  },
+  {
+    "species": "y00678",
+    "errors": 13,
+    "confused_with": "chacha1"
+  }
+]

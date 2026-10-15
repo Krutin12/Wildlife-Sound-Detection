@@ -80,7 +80,7 @@ def _sync_logo_assets():
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     src_logo = os.path.join(project_root, "Listenleaf-removebg-preview.png")
     if not os.path.exists(src_logo):
-        src_logo = r"C:\Users\krutin_12\Desktop\clg project(Internship)\wildlife\Listenleaf-removebg-preview.png"
+        src_logo = r"C:\Users\krutin_12\Desktop\WildLIfe-Detection\Listenleaf-removebg-preview.png"
     if not os.path.exists(src_logo):
         src_logo = os.path.join(project_root, "1d8382a3-71cb-42f2-8893-3bdf27f9cfc0.png")
     if os.path.exists(src_logo):

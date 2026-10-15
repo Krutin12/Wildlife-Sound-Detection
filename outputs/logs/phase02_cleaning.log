@@ -1,0 +1,74 @@
+[2026-10-08 14:44:59] INFO - wildlife - Starting data cleaning pipeline...
+[2026-10-08 14:44:59] INFO - wildlife - Loaded 35549 records from train.csv
+[2026-10-08 14:44:59] INFO - wildlife - Checking for missing audio files...
+[2026-10-08 14:45:06] INFO - wildlife -   Removed 0 entries with missing audio files.
+[2026-10-08 14:45:06] INFO - wildlife -   Remaining: 35549
+[2026-10-08 14:45:06] INFO - wildlife - Checking for corrupted audio files...
+[2026-10-08 14:53:13] INFO - wildlife -   Removed 0 corrupted audio files.
+[2026-10-08 14:53:13] INFO - wildlife -   Remaining: 35549
+[2026-10-08 14:53:13] INFO - wildlife - Removing duplicate entries...
+[2026-10-08 14:53:13] INFO - wildlife -   Removed 0 full-row duplicates.
+[2026-10-08 14:53:13] INFO - wildlife -   Removed 0 filename duplicates.
+[2026-10-08 14:53:13] INFO - wildlife -   Remaining: 35549
+[2026-10-08 14:53:13] INFO - wildlife - Filtering by rating >= 3...
+[2026-10-08 14:53:13] INFO - wildlife -   Removed 14254 low-quality recordings.
+[2026-10-08 14:53:13] INFO - wildlife -   Remaining: 21295
+[2026-10-08 14:53:13] INFO - wildlife - Cleaning columns...
+[2026-10-08 14:53:13] INFO - wildlife -   Dropped 'secondary_labels' column.
+[2026-10-08 14:53:13] INFO - wildlife -   Final columns: ['primary_label', 'type', 'latitude', 'longitude', 'scientific_name', 'common_name', 'class_name', 'inat_taxon_id', 'author', 'license', 'rating', 'url', 'filename', 'collection']
+[2026-10-08 14:53:13] INFO - wildlife - Saved cleaned dataset to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\train_cleaned.csv
+[2026-10-08 14:53:13] INFO - wildlife - Final dataset: 21295 records, 185 species
+[2026-10-08 14:53:13] INFO - wildlife - Saved cleaning report to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\cleaning_report.txt
+[2026-10-08 16:47:10] INFO - wildlife - Starting data cleaning pipeline...
+[2026-10-08 16:47:11] INFO - wildlife - Loaded 35549 records from train.csv
+[2026-10-08 16:47:11] INFO - wildlife - Checking for missing audio files...
+[2026-10-08 16:47:16] INFO - wildlife -   Removed 0 entries with missing audio files.
+[2026-10-08 16:47:16] INFO - wildlife -   Remaining: 35549
+[2026-10-08 16:47:16] INFO - wildlife - Checking for corrupted audio files...
+[2026-10-08 16:55:50] INFO - wildlife -   Removed 0 corrupted audio files.
+[2026-10-08 16:55:50] INFO - wildlife -   Remaining: 35549
+[2026-10-08 16:55:50] INFO - wildlife - Removing duplicate entries...
+[2026-10-08 16:55:50] INFO - wildlife -   Removed 0 full-row duplicates.
+[2026-10-08 16:55:50] INFO - wildlife -   Removed 0 filename duplicates.
+[2026-10-08 16:55:50] INFO - wildlife -   Remaining: 35549
+[2026-10-08 16:55:50] INFO - wildlife - Filtering by rating >= 3...
+[2026-10-08 16:55:50] INFO - wildlife -   Removed 14254 low-quality recordings.
+[2026-10-08 16:55:50] INFO - wildlife -   Remaining: 21295
+[2026-10-08 16:55:50] INFO - wildlife - Cleaning columns...
+[2026-10-08 16:55:50] INFO - wildlife -   Dropped 'secondary_labels' column.
+[2026-10-08 16:55:50] INFO - wildlife -   Final columns: ['primary_label', 'type', 'latitude', 'longitude', 'scientific_name', 'common_name', 'class_name', 'inat_taxon_id', 'author', 'license', 'rating', 'url', 'filename', 'collection']
+[2026-10-08 16:55:50] INFO - wildlife - Saved cleaned dataset to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\train_cleaned.csv
+[2026-10-08 16:55:50] INFO - wildlife - Final dataset: 21295 records, 185 species
+[2026-10-08 16:55:50] INFO - wildlife - Saved cleaning report to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\cleaning_report.txt
+[2026-10-08 16:55:50] INFO - wildlife - 
+==================================================
+[2026-10-08 16:55:50] INFO - wildlife - PHASE 6: Label Encoding
+[2026-10-08 16:55:51] INFO - wildlife - Encoded 185 classes
+[2026-10-08 16:55:51] INFO - wildlife - 
+==================================================
+[2026-10-08 16:55:51] INFO - wildlife - PHASE 7: Dataset Splitting
+[2026-10-08 16:55:52] INFO - wildlife - Splitting dataset: train=0.7, val=0.15, test=0.15
+[2026-10-08 16:55:52] INFO - wildlife - Total samples: 21295, Total species: 185
+[2026-10-08 16:55:52] INFO - wildlife - Species with < 3 samples (handled separately): 12
+[2026-10-08 16:55:52] INFO - wildlife - Train: 14908 (70.0%)
+[2026-10-08 16:55:52] INFO - wildlife - Val:   3194 (15.0%)
+[2026-10-08 16:55:52] INFO - wildlife - Test:  3193 (15.0%)
+[2026-10-08 16:55:52] INFO - wildlife - Train species: 185
+[2026-10-08 16:55:52] INFO - wildlife - Val species:   171
+[2026-10-08 16:55:52] INFO - wildlife - Test species:  165
+[2026-10-08 16:55:52] INFO - wildlife - Saved train split to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\train_split.csv
+[2026-10-08 16:55:52] INFO - wildlife - Saved val split to:   c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\val_split.csv
+[2026-10-08 16:55:52] INFO - wildlife - Saved test split to:  c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\cleaned\test_split.csv
+[2026-10-08 16:55:52] INFO - wildlife - 
+==================================================
+[2026-10-08 16:55:52] INFO - wildlife - PHASE 15: Animal Database
+[2026-10-08 16:55:53] INFO - wildlife - Loaded taxonomy with 234 entries
+[2026-10-08 16:55:53] INFO - wildlife - Taxonomy columns: ['primary_label', 'inat_taxon_id', 'scientific_name', 'common_name', 'class_name']
+[2026-10-08 16:55:53] INFO - wildlife - Detected column mapping: {'primary_label': 'primary_label', 'common_name': 'common_name', 'scientific_name': 'scientific_name', 'class': 'class_name'}
+[2026-10-08 16:55:53] INFO - wildlife - Populated database with 206 species entries
+[2026-10-08 16:55:53] INFO - wildlife - Database saved to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\database\animal_info.db
+[2026-10-08 16:55:53] INFO - wildlife - 
+==================================================
+[2026-10-08 16:55:53] INFO - wildlife - PHASES 8-10: Model Building & Training
+[2026-10-08 16:56:02] INFO - wildlife - Model parameters: 11,582,177 total
+[2026-10-08 16:56:02] INFO - wildlife - Trainable parameters (head only): 885,945

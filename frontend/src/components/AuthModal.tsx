@@ -6,9 +6,10 @@ import { LISTENLEAF_LOGO_URL } from '../assets/logoData';
 
 interface AuthModalProps {
   onSuccess: (user: UserProfile, token: string) => void;
+  onClose?: () => void;
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({ onSuccess }) => {
+export const AuthModal: React.FC<AuthModalProps> = ({ onSuccess, onClose }) => {
   const [showSplash, setShowSplash] = useState(true);
   const [splashFading, setSplashFading] = useState(false);
 
@@ -546,11 +547,37 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onSuccess }) => {
         />
       ))}
       <div className="auth-modal-solid modal-container anim-2" style={{
+        position: 'relative',
         width: '100%', maxWidth: '480px', padding: '2.2rem 2rem',
         borderRadius: 'var(--radius-2xl)',
         transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
         maxHeight: '92vh', overflowY: 'auto',
       }}>
+        {onClose && (
+          <button
+            onClick={onClose}
+            type="button"
+            style={{
+              position: 'absolute',
+              top: '1rem',
+              right: '1rem',
+              background: 'rgba(0,0,0,0.05)',
+              border: 'none',
+              borderRadius: '50%',
+              width: '32px',
+              height: '32px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              color: 'var(--text-secondary)',
+              transition: 'background 0.2s',
+            }}
+            title="Return to Landing Page"
+          >
+            <X style={{ width: '18px', height: '18px' }} />
+          </button>
+        )}
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '1.6rem' }}>
           <img

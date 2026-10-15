@@ -1,0 +1,43 @@
+======================================================================
+  ANIMAL SOUND IDENTIFICATION SYSTEM - EDA REPORT
+  BirdCLEF 2026 Dataset
+======================================================================
+
+DATASET OVERVIEW
+----------------------------------------
+Total recordings: 35549
+Total unique species: 206
+Train CSV columns: ['primary_label', 'secondary_labels', 'type', 'latitude', 'longitude', 'scientific_name', 'common_name', 'class_name', 'inat_taxon_id', 'author', 'license', 'rating', 'url', 'filename', 'collection']
+Taxonomy CSV columns: ['primary_label', 'inat_taxon_id', 'scientific_name', 'common_name', 'class_name']
+
+SPECIES STATISTICS
+----------------------------------------
+Average recordings per species: 172.6
+Max recordings: 499 (rubthr1)
+Min recordings: 1 (116570)
+Median recordings: 125
+Species with < 10 recordings: 25
+Imbalance ratio: 499.0x
+
+QUALITY STATISTICS
+----------------------------------------
+Rating 0.0: 12849 (36.1%)
+Rating 0.5: 22 (0.1%)
+Rating 1.0: 147 (0.4%)
+Rating 1.5: 120 (0.3%)
+Rating 2.0: 598 (1.7%)
+Rating 2.5: 518 (1.5%)
+Rating 3.0: 2738 (7.7%)
+Rating 3.5: 1509 (4.2%)
+Rating 4.0: 8018 (22.6%)
+Rating 4.5: 2185 (6.1%)
+Rating 5.0: 6845 (19.3%)
+
+Recordings with rating >= 3: 21295 (59.9%)
+
+MISSING VALUES
+----------------------------------------
+No missing values in train.csv
+
+Duplicates: 0
+Filename duplicates: 0

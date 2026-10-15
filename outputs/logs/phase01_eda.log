@@ -1,0 +1,105 @@
+[2026-10-08 15:07:19] INFO - wildlife - Starting Exploratory Data Analysis...
+[2026-10-08 15:07:19] INFO - wildlife - Loading train.csv from: C:\Users\krutin_12\Desktop\clg project(Internship)\wildlife\birdclef-2026\train.csv
+[2026-10-08 15:07:19] INFO - wildlife -   Train shape: (35549, 15)
+[2026-10-08 15:07:19] INFO - wildlife -   Columns: ['primary_label', 'secondary_labels', 'type', 'latitude', 'longitude', 'scientific_name', 'common_name', 'class_name', 'inat_taxon_id', 'author', 'license', 'rating', 'url', 'filename', 'collection']
+[2026-10-08 15:07:19] INFO - wildlife - Loading taxonomy.csv from: C:\Users\krutin_12\Desktop\clg project(Internship)\wildlife\birdclef-2026\taxonomy.csv
+[2026-10-08 15:07:19] INFO - wildlife -   Taxonomy shape: (234, 5)
+[2026-10-08 15:07:19] INFO - wildlife -   Columns: ['primary_label', 'inat_taxon_id', 'scientific_name', 'common_name', 'class_name']
+[2026-10-08 15:07:19] INFO - wildlife - Total unique species: 206
+[2026-10-08 15:07:19] INFO - wildlife - Total recordings: 35549
+[2026-10-08 15:07:19] INFO - wildlife - Average recordings per species: 172.6
+[2026-10-08 15:07:19] INFO - wildlife - Max recordings for a species: 499 (rubthr1)
+[2026-10-08 15:07:19] INFO - wildlife - Min recordings for a species: 1 (116570)
+[2026-10-08 15:07:19] INFO - wildlife - Median recordings per species: 125
+[2026-10-08 15:07:21] INFO - wildlife - Saved class imbalance plot to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\class_imbalance.png
+[2026-10-08 15:07:21] INFO - wildlife - Imbalance ratio (max/min): 499.0x
+[2026-10-08 15:07:21] INFO - wildlife - Species with < 10 recordings: 25
+[2026-10-08 15:07:21] INFO - wildlife - Sampling 500 files for duration analysis...
+[2026-10-08 15:07:31] INFO - wildlife - Duration statistics (from 500 files):
+[2026-10-08 15:07:31] INFO - wildlife -   Mean: 32.5s
+[2026-10-08 15:07:31] INFO - wildlife -   Median: 20.1s
+[2026-10-08 15:07:31] INFO - wildlife -   Min: 0.0s
+[2026-10-08 15:07:31] INFO - wildlife -   Max: 859.9s
+[2026-10-08 15:07:31] INFO - wildlife -   Std: 53.3s
+[2026-10-08 15:07:31] INFO - wildlife -   < 5s: 48 (9.6%)
+[2026-10-08 15:07:31] INFO - wildlife -   > 60s: 61 (12.2%)
+[2026-10-08 15:07:32] INFO - wildlife - Saved duration distribution plot to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\duration_distribution.png
+[2026-10-08 15:07:32] INFO - wildlife - Rating distribution:
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 0.0: 12849 (36.1%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 0.5: 22 (0.1%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 1.0: 147 (0.4%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 1.5: 120 (0.3%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 2.0: 598 (1.7%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 2.5: 518 (1.5%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 3.0: 2738 (7.7%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 3.5: 1509 (4.2%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 4.0: 8018 (22.6%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 4.5: 2185 (6.1%)
+[2026-10-08 15:07:32] INFO - wildlife -   Rating 5.0: 6845 (19.3%)
+[2026-10-08 15:07:32] INFO - wildlife - Recordings with rating >= 3: 21295 (59.9%)
+[2026-10-08 15:07:32] INFO - wildlife - Recordings that would be removed: 14254
+[2026-10-08 15:07:32] INFO - wildlife - Saved rating distribution plot to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\rating_distribution.png
+[2026-10-08 15:07:32] WARNING - wildlife - Class column 'class_name' not found after merge.
+[2026-10-08 15:07:32] INFO - wildlife - Full row duplicates: 0
+[2026-10-08 15:07:32] INFO - wildlife - Filename duplicates: 0
+[2026-10-08 15:07:32] INFO - wildlife - Missing values in train.csv:
+[2026-10-08 15:07:32] INFO - wildlife -   No missing values found!
+[2026-10-08 15:07:32] INFO - wildlife - 
+Missing values in taxonomy.csv:
+[2026-10-08 15:07:32] INFO - wildlife -   No missing values found!
+[2026-10-08 15:07:32] INFO - wildlife - Saved EDA report to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\eda_report.txt
+[2026-10-08 15:07:32] INFO - wildlife - All EDA outputs saved to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda
+[2026-10-08 16:47:05] INFO - wildlife - Starting Exploratory Data Analysis...
+[2026-10-08 16:47:05] INFO - wildlife - Loading train.csv from: C:\Users\krutin_12\Desktop\WildLIfe-Detection\birdclef-2026\train.csv
+[2026-10-08 16:47:05] INFO - wildlife -   Train shape: (35549, 15)
+[2026-10-08 16:47:05] INFO - wildlife -   Columns: ['primary_label', 'secondary_labels', 'type', 'latitude', 'longitude', 'scientific_name', 'common_name', 'class_name', 'inat_taxon_id', 'author', 'license', 'rating', 'url', 'filename', 'collection']
+[2026-10-08 16:47:05] INFO - wildlife - Loading taxonomy.csv from: C:\Users\krutin_12\Desktop\WildLIfe-Detection\birdclef-2026\taxonomy.csv
+[2026-10-08 16:47:05] INFO - wildlife -   Taxonomy shape: (234, 5)
+[2026-10-08 16:47:05] INFO - wildlife -   Columns: ['primary_label', 'inat_taxon_id', 'scientific_name', 'common_name', 'class_name']
+[2026-10-08 16:47:05] INFO - wildlife - Total unique species: 206
+[2026-10-08 16:47:05] INFO - wildlife - Total recordings: 35549
+[2026-10-08 16:47:05] INFO - wildlife - Average recordings per species: 172.6
+[2026-10-08 16:47:05] INFO - wildlife - Max recordings for a species: 499 (rubthr1)
+[2026-10-08 16:47:05] INFO - wildlife - Min recordings for a species: 1 (116570)
+[2026-10-08 16:47:05] INFO - wildlife - Median recordings per species: 125
+[2026-10-08 16:47:05] INFO - wildlife - Saved class imbalance plot to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\class_imbalance.png
+[2026-10-08 16:47:05] INFO - wildlife - Imbalance ratio (max/min): 499.0x
+[2026-10-08 16:47:05] INFO - wildlife - Species with < 10 recordings: 25
+[2026-10-08 16:47:05] INFO - wildlife - Sampling 500 files for duration analysis...
+[2026-10-08 16:47:10] INFO - wildlife - Duration statistics (from 500 files):
+[2026-10-08 16:47:10] INFO - wildlife -   Mean: 32.5s
+[2026-10-08 16:47:10] INFO - wildlife -   Median: 20.1s
+[2026-10-08 16:47:10] INFO - wildlife -   Min: 0.0s
+[2026-10-08 16:47:10] INFO - wildlife -   Max: 859.9s
+[2026-10-08 16:47:10] INFO - wildlife -   Std: 53.3s
+[2026-10-08 16:47:10] INFO - wildlife -   < 5s: 48 (9.6%)
+[2026-10-08 16:47:10] INFO - wildlife -   > 60s: 61 (12.2%)
+[2026-10-08 16:47:10] INFO - wildlife - Saved duration distribution plot to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\duration_distribution.png
+[2026-10-08 16:47:10] INFO - wildlife - Rating distribution:
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 0.0: 12849 (36.1%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 0.5: 22 (0.1%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 1.0: 147 (0.4%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 1.5: 120 (0.3%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 2.0: 598 (1.7%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 2.5: 518 (1.5%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 3.0: 2738 (7.7%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 3.5: 1509 (4.2%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 4.0: 8018 (22.6%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 4.5: 2185 (6.1%)
+[2026-10-08 16:47:10] INFO - wildlife -   Rating 5.0: 6845 (19.3%)
+[2026-10-08 16:47:10] INFO - wildlife - Recordings with rating >= 3: 21295 (59.9%)
+[2026-10-08 16:47:10] INFO - wildlife - Recordings that would be removed: 14254
+[2026-10-08 16:47:10] INFO - wildlife - Saved rating distribution plot to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\rating_distribution.png
+[2026-10-08 16:47:10] WARNING - wildlife - Class column 'class_name' not found after merge.
+[2026-10-08 16:47:10] INFO - wildlife - Full row duplicates: 0
+[2026-10-08 16:47:10] INFO - wildlife - Filename duplicates: 0
+[2026-10-08 16:47:10] INFO - wildlife - Missing values in train.csv:
+[2026-10-08 16:47:10] INFO - wildlife -   No missing values found!
+[2026-10-08 16:47:10] INFO - wildlife - 
+Missing values in taxonomy.csv:
+[2026-10-08 16:47:10] INFO - wildlife -   No missing values found!
+[2026-10-08 16:47:10] INFO - wildlife - Saved EDA report to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda\eda_report.txt
+[2026-10-08 16:47:10] INFO - wildlife - All EDA outputs saved to: c:\Users\krutin_12\Desktop\WildLIfe-Detection\outputs\eda
+[2026-10-08 16:47:10] INFO - wildlife - 
+==================================================
+[2026-10-08 16:47:10] INFO - wildlife - PHASE 2: Data Cleaning

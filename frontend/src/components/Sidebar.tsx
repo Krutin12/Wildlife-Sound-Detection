@@ -6,9 +6,10 @@ interface SidebarProps {
   activeTab: 'upload' | 'location' | 'history' | 'species' | 'analytics' | 'settings';
   setActiveTab: (tab: any) => void;
   user?: any;
+  onBackToLanding?: () => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
+export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onBackToLanding }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
@@ -205,6 +206,32 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
               AI PLATFORM
             </span>
           </div>
+
+          {onBackToLanding && (
+            <button
+              onClick={onBackToLanding}
+              style={{
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                padding: '0.55rem 0.85rem',
+                marginBottom: '0.75rem',
+                borderRadius: 'var(--radius-md)',
+                border: '1px solid rgba(255,255,255,0.12)',
+                background: 'rgba(255,255,255,0.05)',
+                color: '#a8c4ae',
+                cursor: 'pointer',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+                transition: 'all 0.2s ease',
+              }}
+              title="Return to Landing Page"
+            >
+              <span style={{ fontSize: '1rem', color: '#5a9e6f' }}>←</span>
+              <span>Landing Page</span>
+            </button>
+          )}
 
           {/* Nav */}
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>

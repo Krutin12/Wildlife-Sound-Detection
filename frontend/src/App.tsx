@@ -9,6 +9,7 @@ import { AnimalLocation } from './components/AnimalLocation';
 import { AuthModal } from './components/AuthModal';
 import { Settings } from './components/Settings';
 import { AnalyticsDashboard } from './components/AnalyticsDashboard';
+import { LandingPage } from './components/landing/LandingPage';
 import { PredictionResponse, HistoryRecord, SpeciesRecord, DbStatus, UserProfile } from './types';
 import {
   uploadAudioForPrediction,
@@ -20,6 +21,8 @@ import {
 } from './api';
 
 export const App: React.FC = () => {
+  const [viewMode, setViewMode] = useState<'landing' | 'app'>('landing');
+  const [showAuthModal, setShowAuthModal] = useState(false);
   const [activeTab, setActiveTab] = useState<'upload' | 'location' | 'history' | 'species' | 'analytics' | 'settings'>('upload');
 
   // User Auth State
@@ -87,6 +90,7 @@ export const App: React.FC = () => {
     localStorage.removeItem('listenleaf_token');
     localStorage.removeItem('wildsound_user');
     localStorage.removeItem('wildsound_token');
+    setViewMode('landing');
   };
 
   const handleAudioAnalysis = async (file: File) => {
@@ -113,13 +117,53 @@ export const App: React.FC = () => {
     }
   };
 
+  if (viewMode === 'landing') {
+    return (
+      <>
+        <LandingPage
+          onOpenLogin={() => setShowAuthModal(true)}
+          onLaunchApp={() => {
+            if (currentUser) {
+              setViewMode('app');
+            } else {
+              setShowAuthModal(true);
+            }
+          }}
+        />
+        {showAuthModal && (
+          <AuthModal
+            onSuccess={(user, token) => {
+              handleAuthSuccess(user, token);
+              setShowAuthModal(false);
+              setViewMode('app');
+            }}
+            onClose={() => setShowAuthModal(false)}
+          />
+        )}
+      </>
+    );
+  }
+
   if (!currentUser) {
-    return <AuthModal onSuccess={handleAuthSuccess} />;
+    return (
+      <AuthModal
+        onSuccess={(user, token) => {
+          handleAuthSuccess(user, token);
+          setViewMode('app');
+        }}
+        onClose={() => setViewMode('landing')}
+      />
+    );
   }
 
   return (
     <div className="app-layout">
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} user={currentUser} />
+      <Sidebar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        user={currentUser}
+        onBackToLanding={() => setViewMode('landing')}
+      />
 
       <main className="main-wrapper">
         {activeTab === 'upload' && (
